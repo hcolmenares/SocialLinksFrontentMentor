@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap");
+
+:root {
+  --primary: #8CD867;
+  --secondary: #333333;
+  --terciary: #1F1F1F;
+  --contrast: #141414;
+  --white: #ffffff;
+
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+*,
+*::after,
+*::before {
+  font-weight: 500;
+  box-sizing: border-box;
+  color: var(--secondary);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: var(--contrast);
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p, a, h1, h3, ul, li {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row,
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.social {
+  width: 90%;
+  max-width: 34rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--terciary);
+}
+
+.social-content {
+  padding: 1rem;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+.personal-info {
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.location {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.description {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.link-list {
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.link-list_item {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.link-list_item:hover {
+  background: var(--primary);
+  color: var(--terciary);
+}
